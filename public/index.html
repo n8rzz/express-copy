@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>restAngularRequire</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+<script src="assets/vendor/requirejs/require.js" data-main="assets/scripts/main.js"></script>
+
+<body ng-controller="DashboardController">
+  <h1>restAngular</h1>
+
+    <table border="1" style="margin-bottom: 10px;">
+        <thead>
+            <tr>
+                <th>Project</th>
+                <th>Developer</th>
+                <th>Hours</th>
+                <th>Project Type</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="project in projects">
+                <td ng-bind="project.name"></td>
+                <td>
+                    <ul>
+                        <li ng-repeat="member in project.team_members" ng-bind="member.name"></li>
+                    </ul>
+                </td>
+                <td ng-bind="project.hours_needed"></td>
+                <td ng-bind="project.type"></td>
+                <td ng-bind="project.status"></td>
+                <td>
+                    <a href="#">edit</a> |
+                    <a href="#">todo</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+  <br /><br /><br />
+
+    <form onsubmit="createProject">
+      <label for="">Project Name
+          <input type="text" name="" value="" ng-model="projects.name" placeholder="Project Name" />
+      </label>
+
+      <br />
+
+      <label for="">Project Nickname
+          <input type="text" name="" value="" ng-model="projects.nickname" placeholder="Project Nickname" />
+      </label>
+
+      <br />
+
+      <label for="">Project Code(s)
+          <input type="text" name="" value="" ng-model="projects.codes" placeholder="Project Code" />
+      </label>
+
+      <br />
+
+      <label for="">PM
+          <input type="text" name="" value="" ng-model="projects.manager" placeholder="PM" />
+      </label>
+
+      <br />
+
+      <label for="">Role
+          <input type="text" name="" value="" ng-model="projects.role" placeholder="Role" />
+      </label>
+
+      <br />
+
+      <label for="">Start Date
+          <input type="date" name="" value="" ng-model="projects.start_date" placeholder="Start Date" />
+      </label>
+
+      <br />
+
+      <label for="">End Date
+          <input type="date" name="" value="" ng-model="projects.end_date" placeholder="End Date" />
+      </label>
+
+      <br />
+
+      <label for="">Developer
+          <select ng-model="projects.developer">
+              <option>Select a developer</option>
+          </select>
+      </label>
+
+      <br />
+
+      <label for="">Status
+          <select ng-model="projects.status">
+              <option>Project Status</option>
+          </select>
+      </label>
+
+      <br />
+
+      <label for="">Hours Needed
+          <input type="number" name="" value="" ng-model="projects.hours_needed" placeholder="Hours" />
+      </label>
+
+      <br />
+
+      <fieldset>
+          <legend>Project Type</legend>
+          <label for="">
+              <input type="radio" name="" value="" ng-model="projects.type" />
+                  Client
+          </label>
+          <label for="">
+              <input type="radio" name="" value="" ng-model="projects.type" />
+                  Bravo
+          </label>
+      </fieldset>
+
+      <input type="button" value="cancel" />
+      <input type="submit" value="submit" />
+
+  </form>
+
+  <br /><br /><br />
+
+    <table cellpadding="5px" border="1">
+      <thead>
+      <tr>
+          <th>Name</th>
+          <th>Skills</th>
+          <th>Roles</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="member in teamMembers">
+          <td ng-bind="member.name"></td>
+          <td ng-bind="member.skills"></td>
+          <td ng-bind="member.roles"></td>
+      </tr>
+      </tbody>
+    </table>
+
+</body>
+</html>

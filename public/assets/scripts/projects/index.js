@@ -1,0 +1,5 @@
+define([
+    './ProjectDirective',
+
+    './ProjectService'
+], function () {} );

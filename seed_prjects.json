@@ -1,0 +1,54 @@
+{
+    "name" : "Widgets 'R Us",
+    "codes" : "1888TZ",
+    "manger" : "Mike Malarchy",
+    "roles" : "",
+    "start_date" : "1425526055793",
+    "end_date" : "1425527055793",
+    "team_members" : [
+        {
+            "id" : "54f7cb0b7bed7d2ff32147ec",
+            "name" : "Robert Plant"
+        }
+    ],
+    "status" : "Current",
+    "hours_needed" : "125",
+    "type" : "Client",
+    "notes" : ""
+},
+{
+    "name" : "Boxes, Boxes, Boxes",
+    "codes" : "18334Z",
+    "manger" : "Octavius Cesar",
+    "roles" : "",
+    "start_date" : "1425522055793",
+    "end_date" : "1425537055793",
+    "team_members" : [
+        {
+            "id" : "54f7cb0b7bed7d2ff32147ed",
+            "name" : "Jimmy Page"
+        }
+    ],
+    "status" : "Current",
+    "hours_needed" : "300",
+    "type" : "Client",
+    "notes" : ""
+},
+{
+    "name" : "Marble & Stone",
+    "codes" : "66774Z",
+    "manger" : "Henry l'Huit",
+    "roles" : "",
+    "start_date" : "1425526367565",
+    "end_date" : "1425527367565",
+    "team_members" : [
+        {
+            "id" : "54f7cb0b7bed7d2ff32147f0",
+            "name" : "David Gilmore"
+        }
+    ],
+    "status" : "Pending Removal",
+    "hours_needed" : "1500",
+    "type" : "Client",
+    "notes" : ""
+}
