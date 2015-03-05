@@ -46,15 +46,21 @@ git push
 heroku create
 git push heroku master
 
-start app
+#start app
 heroku ps:scale web=1
 
-open in browser
+#open in browser
 heroku open
 
 
-setup db
+#setup db
 heroku addons:add mongolab
 heroku config | grep MONGOLAB_URI
 
-update db references in server file
+#update db references in server file
+
+#open mongolabs console
+heroku addons:open mongolab
+
+#find mongo console connection info
+connect with terminal

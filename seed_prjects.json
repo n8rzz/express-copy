@@ -1,3 +1,4 @@
+[
 {
     "name" : "Widgets 'R Us",
     "codes" : "1888TZ",
@@ -7,7 +8,6 @@
     "end_date" : "1425527055793",
     "team_members" : [
         {
-            "id" : "54f7cb0b7bed7d2ff32147ec",
             "name" : "Robert Plant"
         }
     ],
@@ -25,7 +25,6 @@
     "end_date" : "1425537055793",
     "team_members" : [
         {
-            "id" : "54f7cb0b7bed7d2ff32147ed",
             "name" : "Jimmy Page"
         }
     ],
@@ -43,7 +42,6 @@
     "end_date" : "1425527367565",
     "team_members" : [
         {
-            "id" : "54f7cb0b7bed7d2ff32147f0",
             "name" : "David Gilmore"
         }
     ],
@@ -52,3 +50,4 @@
     "type" : "Client",
     "notes" : ""
 }
+]
