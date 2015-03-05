@@ -36,3 +36,25 @@ cd to mongo install dir
 sudo mongo
 
 start node server
+
+
+---
+DEPLOY
+---
+git init
+git push
+heroku create
+git push heroku master
+
+start app
+heroku ps:scale web=1
+
+open in browser
+heroku open
+
+
+setup db
+heroku addons:add mongolab
+heroku config | grep MONGOLAB_URI
+
+update db references in server file

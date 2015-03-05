@@ -16,7 +16,8 @@ var TeamMember = require('./app/models/teamMember');
 var mongo = require('mongoskin');
 var mongoose = require('mongoose');
 var monk = require('monk');
-var db = mongo.db('mongodb://localhost:27017/restAngular', {native_parser:true});
+// var db = mongo.db('mongodb://localhost:27017/restAngular', {native_parser:true});
+var db = mongo.db('mongodb://heroku_app34611940:ub5mgkl8dthv5fmqedqm94rlk2@ds051831.mongolab.com:51831/heroku_app34611940', {native_parser:true});
 
 var app = express();
 
